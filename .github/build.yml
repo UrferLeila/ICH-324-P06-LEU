@@ -1,0 +1,13 @@
+trigger:
+  - main
+
+pool:
+  build: 'ubuntu-latest'
+
+steps:
+  - script: actions/checkout
+    displayName: 'Récupération du code source'
+  
+  - script: actions/setup-node
+    displayName: ' Installer l environnement Node.js sur l agent'
+  
